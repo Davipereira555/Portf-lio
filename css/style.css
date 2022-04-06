@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Rubik', sans-serif;
+    border: 0;
+}
+
+/* Menu inicial */
+header {
+    background-color: rgb(24, 24, 48);
+    background: darkgreen;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+h1 {
+    color: white;
+    align-self: center;
+    position: relative;
+    bottom: 4px;
+}
+
+nav {
+    display: flex;
+    align-self: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    width: 560px;
+    height: 25px;
+}
+
+header nav ul li {
+    display: flex;
+    font-size: 1.2em;
+    width: 110px;
+    margin-right: -15px;
+    justify-content: center;
+}
+
+header nav ul li a {
+    color: white;
+    align-self: center;
+}
+
+header nav ul li a:hover {
+    font-size: 20px;
+}
+
+/* Geral */
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px 150px;
+    z-index: -1;
+}
+
+.principais-titulos {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+}
+
+
+/* Apresentação */
+.foto-sobre {
+    display: flex;
+}
+
+.foto-perfil img {
+    display: flex;
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    border: solid 1px darkgreen;
+}
+
+
+#apresentacao > .foto-sobre > .texto-inicial {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+#apresentacao div p {
+    font-size: 25px;
+}
+
+#apresentacao div .principais-titulos {
+    font-size: 32px;
+}
+
+#apresentacao ul {
+    margin: 0;
+}
+
+#apresentacao ul li {
+    font-size: 15px;
+    width: 100%;
+    height: 1rem;
+}
+
+#apresentacao ul li a {
+    color: black;
+}
+
+#apresentacao button {
+    margin-right: 2rem;
+    width: 6rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1.01em;
+    font-weight: 600;
+    background: rgb(41, 216, 41);
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+#apresentacao button:hover {
+    transform: scale(1.2);
+    background: rgb(41, 216, 41);
+}
+
+#apresentacao button:active {
+    background: rgb(41, 216, 41);
+}
+
+/* Sobre */
+#sobre {
+    background: darkgreen;
+}
+
+#sobre p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Skills */
+#skills ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#skills ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+
+#skills ul li p { 
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#skills ul li img {
+    height: 100px;
+    align-self: center;
+    margin: auto 0;
+}
+
+/* Hobbies */
+#hobbies ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#hobbies ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+
+#hobbies ul li p { 
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#hobbies ul li img {
+    height: 70px;
+    align-self: center;
+    margin: auto 0;
+}
+
+/* Formação */
+#formacao .esp-formacao {
+    font-size: 1px;
+}
+
+#formacao ul {
+    height: 250px;
+}
+
+#formacao ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+    align-items: center;
+    font-weight: 500;
+    border: 2px solid darkgreen;
+    border-radius: 10px 70px 40px 20px;
+    padding: 10px;
+}
+
+#formacao ul li img {
+    width: 120px;
+    align-self: center;
+    margin: auto 0;
+}
+
+/* Projetos */
+#projetos {
+    background: darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projetos .conter-img {
+    width: 80vw;   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projetos .conter-img figure {
+    width: 80%;
+}
+
+#projetos .conter-img figure img {
+    width: 100%;
+}
+
+#projetos .conter-img .info-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+}
+
+#projetos .conter-img .info-projeto button {
+    margin-right: 2rem;
+    width: 6rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1.01em;
+    font-weight: 600;
+    background: rgb(41, 216, 41);
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+#projetos button:hover {
+    transform: scale(1.2);
+    background: rgb(41, 216, 41);
+}
+
+#projetos button:active {
+    background: rgb(41, 216, 41);
+}
+
+/* Contato */
+#contato {
+    margin-top: 10px;
+    display: flex;
+}
+
+#contato .img-contato {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto auto;
+}
+
+#contato .img-contato img {
+    margin: 0 auto;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato .div-form .principais-titulos {
+    margin-bottom: 10px;
+}
+
+#contato .div-form p {
+    margin-bottom: 10px;
+}
+
+#contato .div-form form label {
+    font-weight: 600;
+    margin-top: 10px;
+} 
+
+#contato form input, textarea {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+#contato form textarea {
+    height: 140px ;
+}
+
+#contato form input[type=submit] {
+    width: 180px;
+    height: 50px;
+    align-self: center;
+    background: darkgreen;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in 0.1s;
+    transform: scale(1.1);
+}
+
+#contato form input[type=submit]:hover {
+    transform: rotate(0deg);
+}
+
+
+#contato .span-error {
+    display: none;
+    color: red;
+}
+
+#contato .span-msg-enviada {
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+    color: green;
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+footer {
+    background: darkgreen;
+    display: flex;
+    flex-direction: column;
+    border-top: solid;
+    padding: 5px 0;
+    height: 80px;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+/* TESTES */
+.style-hover:hover {
+    transition: all ease-in 0.1s;
+    transform: rotate(-2deg);
+}
